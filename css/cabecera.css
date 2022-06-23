@@ -186,15 +186,20 @@ body{
 
 
 @media (max-width: 657px) {
-    .logo h1 {
-        display: none;
-    }
 
-    .menu {
-        display: none;
+    .barra_superior{
         flex-direction: column;
+        height: auto;
+    }
+    .logo{
+        flex-direction: column;
+        height: auto;
+        padding-left: 0px;
         justify-content: center;
-        width: 100%;
+        width: auto;
+    }
+    .menu{
+        display: none;
     }
 
 
