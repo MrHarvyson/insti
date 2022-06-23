@@ -524,7 +524,12 @@ textarea {
     .intro{
         margin-left: 5rem;
         margin-right: 5rem;
-
+    }
+    .corte{
+        border-width: 0 0 15vh 100vw;
+    }
+    .cabecera{
+        height: 60vh;
     }
 }
 
@@ -538,14 +543,10 @@ textarea {
     .intro span{
         font-size: 2.5rem;
     }
-
     .cabecera{
         height: 35vh;
-
     }
     .corte{
-
         border-width: 0 0 10vh 100vw;
-
     }
 }
