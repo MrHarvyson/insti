@@ -1,0 +1,132 @@
+:root{
+    --red:#b91646;
+    --gris:#DFD8CA;
+}
+
+.material-symbols-outlined{
+    color: grey;
+}
+.material-symbols-outlined:hover{
+    color: rgba(185, 22, 70, 0.8);
+}
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+
+*{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*box-sizing:border-box;*/
+
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+    overflow-x: hidden;
+    color: grey;
+
+}
+
+/*--RECURSOS--*/
+
+.cajablanca{
+    height: 100px;
+}
+
+/*--CONTENIDO--*/
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.submenu{
+    display: flex;
+    justify-content: center;
+    background: rgba(185, 22, 70, 0.8);
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.submenu a{
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.active {
+
+    font-weight: 900;
+    border-radius: 25px 25px 0px 0px;
+    color: black;
+}
+
+.cabecera_tabla {
+    font-weight: 900;
+    background: #dedede;
+}
+
+.vinculo{
+    color: grey;
+    text-decoration: none;
+    list-style: none;
+}
+
+.vinculo:hover{
+    color: #b91646;
+    text-decoration: none;
+    list-style: none;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table, th, tr {
+    padding: 10px;
+    border: solid 1px grey;
+    color: grey;
+    font-weight: 100;
+
+}
+
+table th:last-child {
+    width: 10%;
+}
+
+.calcetin{
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.rellenar{
+    display: grid;
+    width: 75%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px auto;
+}
+
+.rellenar div{
+
+}
+
+fieldset {
+    border: 0px;
+}
+
+.rellenar .button_guardar {
+    margin-top:20px
+}
+.rellenar .grupo {
+    margin-top:20px
+}

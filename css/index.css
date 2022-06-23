@@ -1,0 +1,542 @@
+:root{
+    --red:#b91646;
+    --redm: #c07a8f;
+    --gris:#DFD8CA;
+
+}
+
+.color1 {color: #20dad9;}
+.color2 {color: #9aecca;}
+.color3 {color: #650944;}
+.color4 {color: #a62343;}
+.color5 {color: #cb7e55;}
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+    overflow-x: hidden;
+    background-color: whitesmoke;
+    color: grey;
+
+}
+
+p{
+
+}
+
+/*--RECURSOS--*/
+
+.cajablanca{
+    height: 100px;
+}
+
+/*--IMAGEN CABECERA--*/
+
+.cabecera{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: url(../imagenes/cabecera3.jpeg) fixed center;
+    background-size: cover;
+    animation: movimiento 20s infinite linear alternate;
+}
+
+@keyframes movimiento {
+    from{
+        background-size: auto 150%;
+    }to{
+        background-size: auto 125%;
+    }
+}
+
+
+.corte{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 20vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+}
+
+/*--INTRODUCCION--*/
+
+/*--TITULOS--*/
+
+.intro{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.titulo h2{
+    font-size: 2.5rem;
+    color: var(--redm);
+    text-align: center;
+}
+
+.titulo span{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--red);
+}
+
+
+/*--CICLOS---*/
+
+.ciclosfp{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.ciclosfp .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*box-sizing: border-box;*/
+}
+
+.ciclosfp .contenedor .caja{
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: all 600ms;
+    background-color: var(--red);
+}
+
+.ciclosfp .contenedor .caja:hover{
+    flex:35%;
+    border: 3px solid var(--red);
+    background: black;
+
+}
+
+.ciclosfp .contenedor .caja img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+
+.ciclosfp .contenedor .caja:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.ciclosfp .contenedor .caja a{
+    font-size: 30px;
+    visibility: hidden;
+    position: absolute;
+    visibility: hidden;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+}
+
+.ciclosfp .contenedor .caja:hover a{
+    font-size: 30px;
+    position: absolute;
+    text-decoration: none;
+    color: var(--red);
+    top: 10%;
+    left: 3%;
+    right: 3%;
+    color: whitesmoke;
+    visibility: visible;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+
+.ciclosfp .contenedor .caja p{
+    position: absolute;
+    visibility: hidden;
+    line-height: 1;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0);
+    margin: 50px;
+
+}
+
+.ciclosfp .contenedor .caja:hover p{
+    position: absolute;
+    text-align: justify;
+    line-height: 1.5;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    color: whitesmoke;
+    visibility: visible;
+    transition: all 6000ms;
+    -webkit-transition: all 6000ms;
+    -moz-transition: all 6000ms;
+    -ms-transition: all 6000ms;
+    -o-transition: all 6000ms;
+}
+
+.ciclosfp .contenedor .caja span{ /*como centrar*/
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    background-color: var(--red);
+    color: whitesmoke;
+    justify-content: center;
+}
+
+
+/*--ACCESO FP--*/
+
+.accesofp {
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+.accesofp .contenedor{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 50vh;
+    /*box-sizing: border-box;*/
+    margin-top: 25px;
+}
+
+.accesofp .contenedor .caja{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    margin: 8px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    line-height: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+    background-color: var(--red);
+}
+
+.accesofp .contenedor .caja:hover{
+    flex:10%;
+    border: 3px solid var(--red);
+    background: black;
+}
+
+.accesofp .contenedor .caja img{
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+
+.accesofp .contenedor .caja:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+.accesofp .contenedor .caja a{
+    font-size: 30px;
+    visibility: hidden;
+    position: absolute;
+    visibility: hidden;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+
+}
+
+.accesofp .contenedor .caja:hover a{
+    font-size: 30px;
+    position: absolute;
+    text-decoration: none;
+    color: var(--red);
+    top: 10%;
+    left: 3%;
+    right: 3%;
+    color: whitesmoke;
+    visibility: visible;
+    transition: all 600ms;
+    -webkit-transition: all 600ms;
+    -moz-transition: all 600ms;
+    -ms-transition: all 600ms;
+    -o-transition: all 600ms;
+}
+
+.accesofp .contenedor .caja p{
+    position: absolute;
+    visibility: hidden;
+    line-height: 1;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0);
+    margin: 50px;
+
+}
+
+.accesofp .contenedor .caja:hover p{
+    position: absolute;
+    text-align: justify;
+    line-height: 1.5;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    color: whitesmoke;
+    visibility: visible;
+    transition: all 6000ms;
+    -webkit-transition: all 6000ms;
+    -moz-transition: all 6000ms;
+    -ms-transition: all 6000ms;
+    -o-transition: all 6000ms;
+}
+
+.accesofp .contenedor .caja span{ /*como centrar*/
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    background-color: var(--red);
+    color: whitesmoke;
+    margin: auto;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.accesofp .contenedor .caja:hover{
+    flex:40%;
+    border: 3px solid var(--red);
+
+}
+
+.accesofp .contenedor .caja:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/*--CONTENEDORES--*/
+
+.contenedor .caja:hover img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+/*--CONTACTO--*/
+
+.contacto{
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.contacto .titulo{
+    text-align: center;
+}
+
+.contacto .titulo p{
+
+    color: var(--red);
+}
+
+.contacto .titulo span{
+
+    font-weight: bold;
+    color: var(--red);
+}
+
+.contacto .rellenar{
+    font-size: 2rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.contacto .correo{
+    color: var(--red);
+    font-weight: 900;
+    width: 50%;
+    padding: 5px;
+}
+
+.contacto .nombre{
+    color: var(--red);
+    font-weight: 900;
+    width: 50%;
+    padding: 5px;
+}
+
+.contacto .comentario{
+    color: var(--red);
+    font-weight: 900;
+    width: 100%;
+    padding: 5px;
+}
+
+.contacto .numero{
+    color: var(--red);
+    font-weight: 900;
+    width: 50%;
+    padding: 5px;
+}
+
+.contacto .selector{
+    color: var(--red);
+    font-weight: 900;
+    width: 50%;
+    padding: 5px;
+}
+
+.rellenar{
+    padding: 20px;
+}
+
+.button_enviar{
+    margin-top: 20px;
+    border-top: 0px;
+}
+
+input{
+    border: 1px solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color:whitesmoke;
+    border-color: var(--red);
+
+}
+
+button{
+    padding: 10px;
+    font-weight: 900;
+    color: var(--red);
+    border: 0px solid;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color:var(--red);
+    border: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    transition: all 600ms;
+
+}
+
+
+fieldset {
+    border: 0px;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+    resize: none;
+}
+
+/*--GOBIERNO--*/
+
+.titulo_omologado{
+    text-align: center;
+}
+
+.titulo_omologado p{
+    font-size: 35px;
+    color: var(--red);
+}
+
+.titulo_omologado span{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--red);
+}
+
+.gobierno{
+
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+
+}
+
+.gobierno img{
+    border-radius: 10px;
+    width: 50%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+/*LOGIN*/
+
+.login{
+    color: var(--red);
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.loginenter{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*@MEDIA*/
+
+@media (max-width: 1152px) {
+    .intro{
+        margin-left: 5rem;
+        margin-right: 5rem;
+
+    }
+}
+
+@media (max-width: 657px) {
+    .intro {
+        font-size: 1.5rem;
+    }
+    .intro h2{
+        font-size: 2rem;
+    }
+    .intro span{
+        font-size: 2.5rem;
+    }
+
+}
