@@ -94,27 +94,31 @@ p{
 /*--CICLOS---*/
 
 .ciclosfp{
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: auto;
 }
 
 .ciclosfp .contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*box-sizing: border-box;*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 50px;
+    justify-items: center;
 }
 
 .ciclosfp .contenedor .caja{
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
-    position: relative;
     margin: 20px;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transition: all 600ms;
     background-color: var(--red);
+}
+
+.ciclosfp .contenedor .caja img{
+    width: 300px;
+    height: 300px;
+
 }
 
 
@@ -258,13 +262,13 @@ p{
 }
 
 /*--CONTENEDORES--*/
-
+/*
 .contenedor .caja:hover img{
     width: 100%;
     height: 100%;
     opacity: 0.5;
 }
-
+*/
 /*--CONTACTO--*/
 
 .contacto{
@@ -444,6 +448,10 @@ textarea {
     .cabecera{
         height: 60vh;
     }
+
+    .ciclosfp .contenedor{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 @media (max-width: 657px) {
@@ -461,5 +469,8 @@ textarea {
     }
     .corte{
         border-width: 0 0 10vh 100vw;
+    }
+    .ciclosfp .contenedor{
+        grid-template-columns: repeat(1,1fr);
     }
 }

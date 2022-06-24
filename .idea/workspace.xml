@@ -27,6 +27,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +46,9 @@
       <workItem from="1656076866622" duration="1018000" />
       <workItem from="1656080362458" duration="62000" />
       <workItem from="1656080493859" duration="8000" />
+      <workItem from="1656080549679" duration="81000" />
+      <workItem from="1656080679556" duration="29000" />
+      <workItem from="1656080800994" duration="1421000" />
     </task>
     <servers />
   </component>
