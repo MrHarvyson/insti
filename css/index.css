@@ -106,18 +106,20 @@ body{
 
 .ciclosfp .contenedor .caja img{
     width: 100%;
-    border: solid 5px var(--red);
+
     border-radius: 100%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     transition: all 600ms;
     margin-bottom: 20px;
+
+    filter: grayscale(75%);
 }
 
 
-
 .ciclosfp .contenedor .caja img:hover{
-    opacity: 0.5;
-    border: solid 0px;
+    opacity: 1;
+    border: solid 5px var(--red);
+    filter: grayscale(0%);
 }
 
 .ciclosfp .contenedor .caja a{
