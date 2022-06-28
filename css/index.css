@@ -335,6 +335,7 @@ textarea {
 @media (max-width: 657px) {
     .intro {
         font-size: 1.5rem;
+        margin-top: 10rem;
     }
     .intro h2{
         font-size: 2rem;
