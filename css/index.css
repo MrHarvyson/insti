@@ -96,16 +96,16 @@ body{
 
 .ciclosfp .contenedor{
     display: grid;
+    margin: 5rem  ;
+    column-gap: 2rem;
+    row-gap: 2rem;
     grid-template-columns: repeat(3,1fr);
-    margin: 50px;
     justify-items: center;
 }
 
 .ciclosfp .contenedor .caja{
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    margin: 40px;
+    width: 100%;
+    height:100%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     transition: all 600ms;
@@ -115,8 +115,8 @@ body{
 }
 
 .ciclosfp .contenedor .caja img{
-    width: 300px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -471,7 +471,8 @@ textarea {
         font-size: 2.5rem;
     }
     .cabecera{
-        height: 35vh;
+        background: none;
+        height: 250px;
     }
     .corte{
         border-width: 0 0 10vh 100vw;
