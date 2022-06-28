@@ -122,10 +122,15 @@ body{
     filter: grayscale(0%);
 }
 
+.ciclosfp .contenedor .caja:hover a{
+    color: var(--red);
+}
+
 .ciclosfp .contenedor .caja a{
     display: flex;
     flex-direction: column;
-    color: var(--red);
+    color: dimgrey;
+
     text-align: center;
     align-items: center;
     font-weight: bold;
