@@ -1,6 +1,8 @@
 :root{
-    --red: rgba(185, 22, 70, 0.16);
+    --red:#b91646;
+    --redm: #c07a8f;
     --gris:#DFD8CA;
+
 }
 
 *{
