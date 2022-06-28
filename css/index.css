@@ -69,8 +69,7 @@ body{
 /*--TITULOS--*/
 
 .intro{
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin: 0px 20rem ;
 }
 
 .titulo h2{
@@ -88,19 +87,22 @@ body{
 
 /*--CICLOS---*/
 
+.ciclosfp{
+    margin: 0px 20rem ;
+}
 
 .ciclosfp .contenedor{
     display: grid;
-    width: 80%;
-    margin:100px auto;
-    column-gap: 2rem;
+    width: 100%;
+    margin:4rem auto;
+    column-gap: 4rem;
     row-gap: 4rem;
     grid-template-columns: repeat(3,1fr);
     justify-items: center;
 }
 
 .ciclosfp .contenedor .caja{
-    width:75%;
+    width:100%;
 
 }
 
@@ -130,12 +132,11 @@ body{
     display: flex;
     flex-direction: column;
     color: dimgrey;
-
     text-align: center;
     align-items: center;
     font-weight: bold;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -318,9 +319,16 @@ textarea {
     .cabecera{
         height: 60vh;
     }
+    .ciclosfp{
+        margin: 0px 5rem;
+    }
 
     .ciclosfp .contenedor{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .ciclosfp .contenedor .caja{
+        width: 75%;
     }
 }
 
