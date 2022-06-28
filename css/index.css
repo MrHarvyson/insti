@@ -106,9 +106,9 @@ body{
 .ciclosfp .contenedor .caja img{
     background-color: var(--red);
     width: 100%;
-    border: solid 1px var(--red);
+    border: solid 0px var(--red);
     border-radius: 100%;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     transition: all 600ms;
     margin-bottom: 20px;
 }
