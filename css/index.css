@@ -128,7 +128,7 @@ body{
     align-items: center;
     font-weight: bold;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 
@@ -329,7 +329,7 @@ textarea {
     }
     .cabecera{
         background: none;
-        height: 250px;
+        height: 300px;
     }
     .corte{
         border-width: 0 0 10vh 100vw;

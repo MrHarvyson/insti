@@ -190,24 +190,29 @@ body{
 @media (max-width: 657px) {
 
     .barra_superior{
-        flex-direction: column;
         height: auto;
     }
     .logo{
-        flex-direction: column;
-        height: auto;
-        padding-left: 0px;
         justify-content: center;
-        width: auto;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        padding-left: 0px;
     }
-    .logo h1,span{
+    .logo h1{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .menu{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0rem;
     }
+
+
 
 
 }
