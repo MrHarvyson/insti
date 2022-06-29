@@ -41,16 +41,16 @@ body{
     position: relative;
     width: 100%;
     height: 70vh;
-    background: url(../imagenes/cabecera4.png)  center;
+    background: url(../imagenes/cabecera4.png) fixed top;
     background-size: cover;
     animation: movimiento 20s infinite linear alternate;
 }
 
 @keyframes movimiento {
     from{
-        background-size: auto 100%;
+        background-size: auto 70%;
     }to{
-        background-size: auto 115%;
+        background-size: auto 85%;
     }
 }
 
@@ -84,6 +84,32 @@ body{
     color: var(--red);
 }
 
+.imagen{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background: url(../imagenes/pasillo.png) center;
+    background-size: cover;
+}
+
+.imagen .corArriba{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0px 0px 10vh 100vw;
+    border-style: solid;
+    border-color: transparent whitesmoke  ;
+    color: #cb7e55;
+}
+
+.imagen .corAbajo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 20vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+}
 
 /*--CICLOS---*/
 
@@ -107,8 +133,7 @@ body{
 }
 
 .ciclosfp .contenedor .caja img{
-    width: 100%;
-
+    width: 65%;
     border-radius: 100%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
     transition: all 600ms;
